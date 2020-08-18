@@ -314,6 +314,32 @@ str_replace(telefones, "-", "")
 ```
 
 ```{r}
-
+cnpj <- c('19.702.231/9999-98', '19.498.482/9999-05', '19.499.583/9999-50', '19.500.999/9999-46', '19.501.139/9999-90')
+str_replace_all(cnpj, '\\.|/|-', '')
 ```
 
+O que são esses símbolos no segundo exemplo? São símbolos especiais utilizados em funções textuais para reconhecimento de padrão. Esses símbolos são conhecidos como Expressões Regulares ou o famoso Regex.
+
+# Regex
+Trata-se de um assunto bastante complexo e avançado. Não é fácil dominar regex e provavelmente você vai precisar sempre consultar e experimentar a montagem dos padrões de regex. Infelizmente não é possível aprender regex rápido e de um jeito fácil, só existe o jeito difícil: errando muito, com muita prática e experiências reais.
+
+A seguir, uma lista dos principais mecanismos de regex:
+
+regex	correspondência
+^	começa do string (ou uma negação)
+.	qualquer caractere
+$	fim da linha
+[maça]	procura os caracteres m, a, ç
+maça	maça
+[0-9]	números
+[A-Z]	qualquer letra maiúscula
+\\w	uma palavra
+\\W	não é palavra
+(pontuação, espaço etc.)
+\\s	um espaço (tab, newline, space)
+
+A seguir, alguns bons sites para aprender mais sobre regex. É um assunto interessante e bastante utilizado para tratamento textual.
+
+http://turing.com.br/material/regex/introducao.html
+
+https://regexone.com/

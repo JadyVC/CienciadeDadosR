@@ -1,0 +1,13 @@
+#A função complete.cases() retorna TRUE para as linhas em que todas as colunas possuem valores válidos (preenchidos) e FALSE para as linhas em que, em alguma coluna, existe um NA. Ou seja, esta função diz quais são as linhas (amostras) completas em todas as suas características (campos).
+#Algumas funções possuem o argumento na.rm, ou semelhantes, para desconsiderar NA no cálculo. É o caso da função mean() ou sum().
+
+#IFELSE
+Existe uma diferença entre as duas formas de “if else”: a estrutura if() {} else {} só opera variáveis, uma por uma, já a estrutura ifelse() opera vetores, ou seja, consegue fazer a comparação para todos os elementos. Isso faz com que a forma if() {} else {} seja mais utilizada para comparações fora dos dados, com variáveis avulsas. Já a estrutura ifelse() é mais usada para comparações dentro dos dados, com colunas, vetores e linhas.
+
+FOR
+
+for(i in c(1, 2, 3, 4, 5)) {
+  print(i^2)
+}
+
+Para cada valor (chamamos esse valor de i) dentro do vetor c(1, 2, 3, 4, 5), execute o comando print(i^2). Qualquer outro comando dentro das chaves { ... } seria executado para cada valor do vetor.
